@@ -3,8 +3,9 @@ import React from 'react'
 import ModelsWrapper from 'components/Model/ModelsWrapper'
 import ModelSection from 'components/Model/ModelSection'
 import DefaultOverlayContent from 'components/DefaultOverlayContent'
+import UniqueOverlay from 'components/UniqueOverlay'
 
-import { Container } from './styles'
+import { Container, Spacer } from './styles'
 
 const models: string[] = [
   'Model One',
@@ -35,6 +36,10 @@ const Page: React.FC = () => {
             />
           ))}
         </div>
+
+        <Spacer />
+
+        <UniqueOverlay />
       </ModelsWrapper>
     </Container>
   )

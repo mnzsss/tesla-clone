@@ -2,14 +2,14 @@ import { useMotionValue } from 'framer-motion'
 import { useEffect } from 'react'
 import { useModel } from './model'
 
-export default () => {
+const useWrapperScroll = () => {
   const { wrapperRef } = useModel()
 
   const scrollY = useMotionValue(0)
   const scrollYProgress = useMotionValue(0)
 
   useEffect(() => {
-    const element = wrapperRef.current
+    const element = wrapperRef?.current
 
     if (element) {
       const updateScrollValue = () => {
@@ -29,3 +29,5 @@ export default () => {
 
   return { scrollY, scrollYProgress }
 }
+
+export default useWrapperScroll
