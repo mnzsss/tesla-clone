@@ -16,7 +16,7 @@ body {
 
 body, input, button, table {
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 button {
