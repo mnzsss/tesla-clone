@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode, useContext, useState } from 'react'
 
-interface CarModel {
+export interface CarModel {
   name: string
   overlayNode: ReactNode
   sectionRef: React.RefObject<HTMLElement>

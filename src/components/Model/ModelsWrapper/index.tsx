@@ -1,10 +1,13 @@
-import { useModel } from 'hooks/model'
 import React, { useEffect, useRef } from 'react'
 
-import { Container } from './styles'
+import { useModel } from 'hooks/model'
+
+import ModelOverlay from '../ModelOverlay'
+
+import { Container, OverlaysRoot } from './styles'
 
 const ModelsWrapper: React.FC = ({ children }) => {
-  const { registerWrapperRef } = useModel()
+  const { registerWrapperRef, registeredModels } = useModel()
 
   const wrapperRef = useRef<HTMLDivElement>(null)
 
@@ -12,7 +15,19 @@ const ModelsWrapper: React.FC = ({ children }) => {
     registerWrapperRef(wrapperRef)
   }, [wrapperRef])
 
-  return <Container ref={wrapperRef}>{children}</Container>
+  return (
+    <Container ref={wrapperRef}>
+      <OverlaysRoot>
+        {registeredModels.map(model => (
+          <ModelOverlay key={model.name} model={model}>
+            {model.overlayNode}
+          </ModelOverlay>
+        ))}
+      </OverlaysRoot>
+
+      {children}
+    </Container>
+  )
 }
 
 export default ModelsWrapper
