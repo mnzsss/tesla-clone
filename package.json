@@ -11,13 +11,13 @@
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
   },
   "dependencies": {
-    "framer-motion": "^3.8.1",
+    "framer-motion": "3.8.1",
     "next": "10.0.7",
     "next-images": "1.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "5.2.1",
-    "webpack": "^5.24.2"
+    "webpack": "5.24.2"
   },
   "husky": {
     "hooks": {

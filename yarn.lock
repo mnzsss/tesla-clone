@@ -2690,7 +2690,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^3.8.1:
+framer-motion@3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.8.1.tgz#dbe1a0f61f0941f9cd18092ec8a69645f0a7acaa"
   integrity sha512-SYbN6Xhff3Y6irXyNwveR1ES44CwXypaMjM79xC/3LEn0loFBlQ7vbNYt58as7EoaAvITXrgO4bdMRv1kro03Q==
@@ -5981,7 +5981,7 @@ webpack-sources@^2.1.1:
     source-list-map "^2.0.1"
     source-map "^0.6.1"
 
-webpack@^5.24.2:
+webpack@5.24.2:
   version "5.24.2"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.24.2.tgz#33790dad631e8b639f4246d762e257720875fe54"
   integrity sha512-uxxKYEY4kMNjP+D2Y+8aw5Vd7ar4pMuKCNemxV26ysr1nk0YDiQTylg9U3VZIdkmI0YHa0uC8ABxL+uGxGWWJg==
