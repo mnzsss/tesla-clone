@@ -11,7 +11,7 @@
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
   },
   "dependencies": {
-    "framer-motion": "3.8.1",
+    "framer-motion": "3.10.0",
     "next": "10.0.7",
     "next-images": "1.7.0",
     "react": "17.0.1",
